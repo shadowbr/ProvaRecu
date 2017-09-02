@@ -18,13 +18,13 @@
       <TextField fx:id="descricaoTextField" layoutX="32.0" layoutY="94.0" />
       <TextField fx:id="pesoTextField" layoutX="211.0" layoutY="94.0" />
       <TextField id="nota" fx:id="notaTextField" layoutX="398.0" layoutY="94.0" />
-      <TableView fx:id="Table" layoutX="35.0" layoutY="168.0" prefHeight="181.0" prefWidth="514.0">
+      <TableView fx:id="table" layoutX="35.0" layoutY="168.0" prefHeight="181.0" prefWidth="514.0">
          <columns>
             <TableColumn fx:id="descTC" prefWidth="297.0" text="Descrição" />
             <TableColumn fx:id="pesTC" minWidth="8.0" prefWidth="113.0" text="Peso" />
             <TableColumn fx:id="notTC" prefWidth="115.0" text="Nota" />
          </columns>
       </TableView>
-      <Label fx:id="resultadoLabel" layoutX="218.0" layoutY="366.0" prefHeight="17.0" prefWidth="74.0" text="Resultado:" />
+      <Label fx:id="resultadoLabel" layoutX="218.0" layoutY="366.0" prefHeight="17.0" prefWidth="116.0" text="Resultado:" />
    </children>
 </AnchorPane>

@@ -28,8 +28,7 @@ public class MediaHarmonicaCalculator {
         return not;
     }
 
-    public void addNota(ItemMedia item) {
+   public void addNota(ItemMedia item) {
         notas.add(item);
     }
-
 }

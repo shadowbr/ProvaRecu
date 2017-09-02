@@ -2,6 +2,8 @@ package org.bigolin.media.view;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -78,8 +80,12 @@ public class Media_harmonicaController implements Initializable {
         table.getItems().add(item);
     }
     @FXML
-    public void calcular() throws Exception{
-        resultadoLabel.setText("Resultado: " + mc.calcula());
+    public void calcular() throws Exception  {
+            resultadoLabel.setText("Resultado:  " +  mc.calcula());
     }
+    }
+
+
     
-}
+    
+

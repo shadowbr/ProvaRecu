@@ -1,10 +1,16 @@
 package org.bigolin.media.model;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import org.bigolin.control.ActiveRecord;
+import org.bigolin.control.Conexao;
+
 /**
  * Created by Lucas.
  */
 
- public class ItemMedia {
+ public class ItemMedia implements ActiveRecord {
     private String name;
     private double nota;
     private double peso;
@@ -15,7 +21,7 @@ package org.bigolin.media.model;
         this.nota = nota;
         this.peso = peso;
     }
-
+    
     public String getName() {
         return name;
     }
@@ -40,7 +46,29 @@ package org.bigolin.media.model;
     public void setPeso(double peso) {
         this.peso = peso;
     }
+    
+    @Override
+    public boolean insert() {
+	Conexao c = new Conexao();
+        Connection dbConnection = c.getConexao();
+        PreparedStatement preparedStatement = null;
 
+        String insertTableSQL = "INSERT INTO nota VALUES" + "(nota_seq.nextval,?,?,?)";
 
+        try {
+            preparedStatement = dbConnection.prepareStatement(insertTableSQL);
+            preparedStatement.setDouble(1, this.getPeso());
+            preparedStatement.setDouble(2, this.getNota());
+            preparedStatement.setString(3, this.getName());
+          
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+           
+            e.printStackTrace();
+        }finally{
+            c.desconecta();
+        }        
+        return true;
+    }
 
 }

@@ -15,7 +15,7 @@ public class Conexao {
 
     private String usuario = "bd3_int21";
     private String senha = "82035754";
-    private String servidor = "oracle.canoas.ifrs.edu.br:8080/apex";
+    private String servidor = "oracle.canoas.ifrs.edu.br";
     private int porta = 1521;
 
     private Connection conexao = null;

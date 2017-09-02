@@ -12,7 +12,7 @@
       <Label layoutX="80.0" layoutY="57.0" text="Descriçao" />
       <Button fx:id="AdiButton" layoutX="252.0" layoutY="128.0" mnemonicParsing="false" onAction="#add" text="Adicionar" />
       <Button fx:id="CalButton" layoutX="132.0" layoutY="362.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" />
-      <Button fx:id="SalButton" layoutX="32.0" layoutY="362.0" mnemonicParsing="false" text="Salvar no BD" />
+      <Button fx:id="SalButton" layoutX="32.0" layoutY="362.0" mnemonicParsing="false" onAction="#inserirBD" text="Salvar no BD" />
       <Label layoutX="272.0" layoutY="58.0" text="Peso" />
       <Label layoutX="456.0" layoutY="59.0" text="Nota" />
       <TextField fx:id="descricaoTextField" layoutX="32.0" layoutY="94.0" />

@@ -83,6 +83,16 @@ public class Media_harmonicaController implements Initializable {
     public void calcular() throws Exception  {
             resultadoLabel.setText("Resultado:  " +  mc.calcula());
     }
+    @FXML
+    public void inserirBD(){
+         String nome = descricaoTextField.getText();
+        Double peso = Double.parseDouble(pesoTextField.getText());
+        Double nota = Double.parseDouble(notaTextField.getText());
+        
+        ItemMedia item = new ItemMedia(nome, nota, peso);
+        
+        item.insert();
+    }
     }
 
 

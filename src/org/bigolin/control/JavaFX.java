@@ -1,11 +1,5 @@
 package org.bigolin.control;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 
 import java.io.IOException;
 import javafx.application.Application;
@@ -14,7 +8,8 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import org.bigolin.media.view.MainWindow;
+import org.bigolin.media.view.Media_harmonicaController;
+
 
 /**
  *
@@ -39,7 +34,7 @@ public class JavaFX extends Application {
         try {
             // Loader
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainWindow.class.getResource("media_harmonica.fxml"));
+            loader.setLocation(Media_harmonicaController.class.getResource("media_harmonica.fxml"));
             AnchorPane rootLayout = (AnchorPane) loader.load();
             
             scene = new Scene(rootLayout);

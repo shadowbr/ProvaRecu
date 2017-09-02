@@ -1,10 +1,10 @@
 package org.bigolin.media.model;
 
 /**
- * Created by marcio on 06/08/17.
+ * Created by Lucas.
  */
 
-class ItemMedia {
+ public class ItemMedia {
     private String name;
     private double nota;
     private double peso;

@@ -1,15 +1,16 @@
-package org.bigolin.media.model;
+package org.shadowbr.media.model;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import org.bigolin.control.ActiveRecord;
-import org.bigolin.control.Conexao;
+import org.shadowbr.media.control.ActiveRecord;
+import org.shadowbr.media.control.Conexao;
 
 /**
- * Created by Lucas.
+ *
+ * @author Lucas Sombra <precutshadow@gmail.com>
+ * @version 1.0.0
  */
-
  public class ItemMedia implements ActiveRecord {
     private String name;
     private double nota;

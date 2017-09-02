@@ -1,4 +1,4 @@
-package org.bigolin.control;
+package org.shadowbr.media.control;
 
 
 import java.sql.Connection;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author Marcio Bigolin <marcio.bigolin@canoas.ifrs.edu.br>
+ * @author Lucas Sombra <precutshadow@gmail.com>
  * @version 1.0.0
  */
 public class Conexao {
@@ -43,7 +43,7 @@ public class Conexao {
             } catch (ClassNotFoundException e) {
                 System.out.println("Senhor programador! Importe o pacote do DB antes de chingar o java");
             } catch(SQLException e){
-                e.printStackTrace(); //Sei lá que diabos tu fez então olhe com calma as coisas.
+                e.printStackTrace(); 
             }
 
         }

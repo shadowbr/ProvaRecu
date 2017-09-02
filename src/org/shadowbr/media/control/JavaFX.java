@@ -1,4 +1,4 @@
-package org.bigolin.control;
+package org.shadowbr.media.control;
 
 
 import java.io.IOException;
@@ -8,12 +8,13 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import org.bigolin.media.view.Media_harmonicaController;
+import org.shadowbr.media.view.Media_harmonicaController;
 
 
 /**
  *
- * @author marcio
+ * @author Lucas Sombra <precutshadow@gmail.com>
+ * @version 1.0.0
  */
 public class JavaFX extends Application {
     private Stage primaryStage;

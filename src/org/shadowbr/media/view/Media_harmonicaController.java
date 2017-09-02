@@ -1,4 +1,4 @@
-package org.bigolin.media.view;
+package org.shadowbr.media.view;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,8 +15,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import org.bigolin.media.model.ItemMedia;
-import org.bigolin.media.model.MediaHarmonicaCalculator;
+import org.shadowbr.media.model.ItemMedia;
+import org.shadowbr.media.model.MediaHarmonicaCalculator;
 
 /**
  * FXML Controller class

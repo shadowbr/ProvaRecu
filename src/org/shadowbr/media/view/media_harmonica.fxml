@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bigolin.media.view.Media_harmonicaController">
+   <children>
+      <ImageView fitHeight="154.0" fitWidth="234.0" layoutX="-3.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/giphy-downsized%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="154.0" fitWidth="234.0" layoutX="189.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/giphy-downsized%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="154.0" fitWidth="222.0" layoutX="388.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/giphy-downsized%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="154.0" fitWidth="234.0" layoutX="367.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/giphy-downsized%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="154.0" fitWidth="234.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/giphy-downsized%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="154.0" fitWidth="234.0" layoutX="179.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/giphy-downsized%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="154.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/giphy-downsized%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="154.0" fitWidth="234.0" layoutX="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/giphy-downsized%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="154.0" fitWidth="222.0" layoutX="378.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/giphy-downsized%20(1).gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="29.0" layoutY="26.0" text="Descrição">
+         <font>
+            <Font size="41.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff0099" />
+                  <Stop color="#6b6b6b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow color="WHITE" height="18.03" radius="9.9975" spread="0.86" width="23.96" />
+         </effect></Label>
+      <Button fx:id="AdiButton" layoutX="252.0" layoutY="128.0" mnemonicParsing="false" onAction="#add" text="Adicionar" textFill="#00ecff">
+         <effect>
+            <ColorAdjust brightness="-0.43" contrast="0.82" hue="0.05" saturation="0.95" />
+         </effect></Button>
+      <Button fx:id="CalButton" layoutX="132.0" layoutY="362.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" textFill="RED">
+         <effect>
+            <ColorAdjust contrast="0.07" hue="-0.31" saturation="0.55" />
+         </effect></Button>
+      <Button fx:id="SalButton" layoutX="32.0" layoutY="362.0" mnemonicParsing="false" onAction="#inserirBD" text="Salvar no BD" textFill="#ff00e9">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="0.81" hue="-0.91" saturation="1.0" />
+         </effect></Button>
+      <Label layoutX="227.0" layoutY="14.0" text="Peso">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff0062" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="56.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="52.89" radius="29.8375" spread="0.71" width="68.46" />
+         </effect></Label>
+      <Label layoutX="411.0" layoutY="14.0" text="Nota" textOverrun="CLIP">
+         <font>
+            <Font size="56.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff0099" />
+                  <Stop color="#5b5b5b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow color="WHITE" height="62.51" radius="43.3575" spread="0.78" width="112.92" />
+         </effect></Label>
+      <TextField fx:id="descricaoTextField" layoutX="32.0" layoutY="94.0" />
+      <TextField fx:id="pesoTextField" layoutX="211.0" layoutY="94.0" />
+      <TextField id="nota" fx:id="notaTextField" layoutX="398.0" layoutY="94.0" />
+      <TableView fx:id="table" layoutX="35.0" layoutY="168.0" prefHeight="181.0" prefWidth="514.0">
+         <columns>
+            <TableColumn fx:id="descTC" prefWidth="297.0" text="Descrição" />
+            <TableColumn fx:id="pesTC" minWidth="8.0" prefWidth="113.0" text="Peso" />
+            <TableColumn fx:id="notTC" prefWidth="115.0" text="Nota" />
+         </columns>
+         <effect>
+            <ColorAdjust brightness="-0.17" contrast="0.26" hue="0.52" saturation="0.79" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TableView>
+      <Label fx:id="resultadoLabel" layoutX="218.0" layoutY="366.0" prefHeight="17.0" prefWidth="116.0" text="Resultado:" textFill="WHITE" />
+   </children>
+</AnchorPane>

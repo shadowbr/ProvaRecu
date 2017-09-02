@@ -1,31 +1,33 @@
-package org.bigolin.media.model;
+package org.shadowbr.media.model;
 
 import java.util.ArrayList;
 
 /**
- * Created by lucas on 01/09/17.
+ *
+ * @author Lucas Sombra <precutshadow@gmail.com>
+ * @version 1.0.0
  */
-
 public class MediaHarmonicaCalculator {
     private ArrayList<ItemMedia> notas = new ArrayList();
 
     public void addNota(String label, double peso, double nota){
         notas.add(new ItemMedia(label,nota,peso));
     }
-    
     public double calcula() throws Exception {
-        double not = 0;
+        double note = 0;
+        double note1 = 0;
         double notaFinal = 0;
         if(notas.size()>2){
-            for(ItemMedia im: notas){
-                not += (im.getPeso() / im.getNota());
+            for(ItemMedia val: notas){
+                note = (val.getPeso() / val.getNota());
+                note1 = note1 + note;
             }
-            notaFinal = notas.size() / not;
+            notaFinal = notas.size() / note1;
             
         }else{
-            throw new Exception("Quantidade de notas insuficientes");
+            throw new Exception("DIGITE MAIS NOTAS!!!");
         }
-        return not;
+        return notaFinal;
     }
 
    public void addNota(ItemMedia item) {

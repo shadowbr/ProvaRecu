@@ -11,6 +11,7 @@ import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import org.bigolin.media.view.MainWindow;
@@ -39,7 +40,7 @@ public class JavaFX extends Application {
             // Loader
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainWindow.class.getResource("media_harmonica.fxml"));
-            BorderPane rootLayout = (BorderPane) loader.load();
+            AnchorPane rootLayout = (AnchorPane) loader.load();
             
             scene = new Scene(rootLayout);
             

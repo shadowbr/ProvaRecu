@@ -1,12 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.bigolin.media.view;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -15,6 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import org.bigolin.media.model.MediaCalculator;
+import org.bigolin.media.model.MediaHarmonicaCalculator;
 
 /**
  * FXML Controller class
@@ -32,7 +30,7 @@ public class MainWindow implements Initializable {
     @FXML
     private ListView<String> lista;
     
-    private MediaCalculator mc = new MediaCalculator();
+    private MediaHarmonicaCalculator mc = new MediaHarmonicaCalculator();
     private ObservableList<String> notas ;
     /**
      * Initializes the controller class.
@@ -47,19 +45,19 @@ public class MainWindow implements Initializable {
         String notaTemp = nota.getText();
         mc.addNota(Double.parseDouble(notaTemp));
         notas.add(notaTemp);
-       
     }
     
     @FXML
     public void calcularMedia(){
-        resultado.setText("Média: "+ mc.calcular());
+        try {
+            resultado.setText("Média: "+ mc.calcula());
+        } catch (Exception ex) {
+            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
     @FXML
     public void sair(){
         System.exit(0);
-    }
-    
-    
-    
+    }  
 }

@@ -27,4 +27,8 @@ public class MediaHarmonicaCalculator {
         }
         return not;
     }
+
+    public void addNota(double not) {
+       
+    }
 }
